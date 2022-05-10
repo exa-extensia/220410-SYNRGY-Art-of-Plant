@@ -3,6 +3,7 @@
 Exercise :
 
 - Figma Slicing from https://www.figma.com/file/gyDnCh9AIvjWlIVuZGkqmu/Belajar-WEB?node-id=0%3A1 by Enricho Alkalas, style modified by me
+  ![Screenshot](./assets/img/ss/Screenshot%202022-05-10%20170206.png)
 - Tailwind & Responsiveness first trial - I sooo love it!
 - DOM Manipulation for Navbar
 
