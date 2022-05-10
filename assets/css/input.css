@@ -1,0 +1,263 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ##################################################
+####################### MAIN ########################
+##################################################### */
+
+html {
+	@apply scroll-smooth;
+}
+
+body {
+	@apply top-0 left-0 m-0 overflow-x-hidden p-0 font-serif;
+}
+
+h1,
+h2,
+h3,
+p:hover {
+	cursor: default;
+}
+
+/* ===================================================== HEADER  */
+
+header {
+	@apply absolute top-0 left-0 z-10 flex h-28 w-full items-center bg-white py-4;
+}
+
+.navbar-fixed {
+	@apply fixed z-[9999] bg-white bg-opacity-80 backdrop-blur-sm;
+	box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-cont {
+	@apply container relative flex items-center justify-between;
+}
+
+.left-block {
+	@apply px-4;
+}
+
+.left-block .logo {
+	@apply bg-gradient-to-r from-red to-neon-blue bg-clip-text text-4xl font-bold text-transparent;
+}
+
+.right-block {
+	@apply flex items-center px-4;
+}
+
+.hamburger-line {
+	@apply my-2 block h-[2px] w-[30px] bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+	@apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+	@apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+	@apply -rotate-45;
+}
+
+#nav-menu {
+	@apply absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-2 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none;
+}
+
+#nav-menu > ul {
+	@apply block lg:flex lg:items-center;
+}
+
+.reg-menu {
+	@apply mx-8 my-3 flex from-red to-neon-blue bg-clip-text text-base font-semibold text-zinc-400 hover:border-b-2 hover:border-neon-yellow hover:bg-gradient-to-r hover:text-transparent lg:my-0;
+}
+
+.subs-menu {
+	@apply mx-8 my-3 flex from-red to-neon-blue bg-clip-text text-base font-semibold text-zinc-400 hover:border-b-2 hover:border-neon-yellow hover:bg-gradient-to-r hover:text-transparent lg:my-0 lg:rounded-md lg:border-2 lg:border-zinc-400 lg:p-2 lg:hover:border-2 lg:hover:border-neon-yellow;
+}
+
+/* ===================================================== FOOTER  */
+
+footer {
+	box-shadow: 0 4px 4px 10px rgba(0, 0, 0, 0.07);
+	@apply flex flex-col-reverse bg-white py-2 px-12 sm:flex sm:flex-row sm:justify-between;
+}
+
+footer > .left-menu {
+	@apply my-6 text-center;
+}
+
+footer > .right-menu {
+	@apply flex flex-col items-center sm:flex sm:flex-row;
+}
+
+.right-menu .reg-btn {
+	@apply m-4 inline-block from-red to-neon-blue bg-clip-text hover:border-b-2 hover:border-neon-yellow hover:bg-gradient-to-r hover:text-transparent;
+}
+
+/* ##################################################
+##################### HOMEPAGE ######################
+##################################################### */
+
+/* ===================================================== HERO  */
+
+#hero {
+	@apply h-screen w-full bg-cover bg-center;
+}
+
+.hero-text-wrapper {
+	@apply relative flex h-screen w-full flex-col items-center justify-center;
+}
+
+.hero-text-wrapper h1 {
+	@apply mb-10 w-full bg-gradient-to-br from-white bg-clip-text text-center text-4xl font-bold text-transparent sm:text-6xl lg:text-7xl;
+}
+
+.hero-text-wrapper p {
+	@apply bg-gradient-to-br from-white bg-clip-text text-sm font-bold text-transparent sm:text-xl lg:text-2xl;
+}
+
+.hero-text-wrapper p::before {
+	content: "";
+	width: 80px;
+	height: 5px;
+	background-image: linear-gradient(to right, white, transparent);
+	position: absolute;
+	bottom: 35%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* ===================================================== ARTICLES  */
+
+#articles {
+	@apply w-full bg-gradient-to-br from-[#ffea97] to-[#f9a3b1] pb-10 lg:h-full lg:text-8xl;
+}
+
+.top-div {
+	@apply p-10 text-center text-xl text-white opacity-80 sm:text-4xl lg:text-7xl;
+}
+
+.bottom-div {
+	@apply h-full sm:flex sm:flex-wrap sm:justify-center sm:gap-6 lg:px-4 xl:flex xl:items-center xl:pb-10;
+}
+
+.article-card {
+	@apply mx-auto mb-6 h-96 w-64 overflow-hidden rounded-xl shadow-xl sm:m-6 xl:h-[400px] xl:w-[300px];
+}
+
+.top-card {
+	@apply h-1/2 w-full bg-cover bg-center;
+}
+
+.bottom-card {
+	@apply flex h-1/2 w-full flex-col items-center justify-center bg-white bg-opacity-60 p-5 text-center text-gray-500;
+}
+
+.bottom-card h3 {
+	@apply mb-6 font-bold italic lg:text-xl;
+}
+
+.bottom-card p {
+	@apply lg:text-base;
+}
+
+/* ===================================================== ABOUT  */
+
+#about {
+	@apply w-full bg-white sm:flex;
+}
+
+.left-div {
+	@apply h-96 w-full bg-cover bg-center sm:h-screen sm:w-1/2;
+}
+
+.right-div {
+	@apply relative h-1/2 w-full bg-gradient-to-r from-red to-neon-blue bg-clip-text p-6 text-transparent sm:flex sm:h-screen sm:w-1/2 sm:flex-col  sm:justify-center;
+}
+
+.right-div h2 {
+	@apply mb-6 text-6xl lg:mb-12 lg:text-8xl;
+}
+
+.right-div p {
+	@apply first-letter:float-left first-letter:mr-3 first-letter:text-5xl first-line:uppercase first-line:tracking-widest lg:first-letter:text-7xl;
+}
+
+/* ===================================================== SUBSCRIBE  */
+
+#subscribe {
+	@apply flex w-full flex-col items-center justify-center bg-gradient-to-br from-[#ffea97] to-[#f9a3b1] py-52;
+}
+
+.sub-wrap {
+	@apply flex h-1/5 flex-col items-center justify-around;
+}
+
+.sub-wrap h2 {
+	@apply mb-4 text-2xl font-bold  text-white;
+}
+
+.sub-wrap p {
+	@apply text-white;
+}
+
+.input-subscribe {
+	@apply mb-10 h-10 w-full border-4 border-slate-400/[.2] px-4;
+}
+
+.sub-wrap a {
+	@apply rounded-md border-2 border-white from-red to-neon-blue p-2 text-white hover:border-2 hover:border-neon-yellow hover:bg-gradient-to-r hover:text-white;
+}
+
+/* ##################################################
+################## PRODUCTPAGE ######################
+##################################################### */
+
+/* ===================================================== HERO  */
+
+.hero-text-wrap {
+	@apply flex h-screen w-full flex-col items-center justify-center text-white;
+}
+
+.hero-text-wrap > h1 {
+	@apply mb-10 w-full bg-gradient-to-br from-white bg-clip-text text-center text-4xl font-bold text-transparent sm:text-6xl lg:text-7xl;
+}
+
+.hero-text-wrap > p {
+	@apply bg-gradient-to-br from-white bg-clip-text text-sm font-bold text-transparent sm:text-xl lg:text-2xl;
+}
+
+/* ===================================================== PRODUCT SECTION  */
+
+.product-title-wrap > h2 {
+	@apply p-10 text-center text-xl font-bold sm:text-2xl lg:text-4xl;
+}
+
+.cards-wrap {
+	@apply sm:flex sm:flex-wrap sm:justify-center sm:gap-6 lg:px-10 xl:px-40;
+}
+
+.one-card {
+	@apply relative mx-auto mb-6 h-96 w-64 overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-95 sm:m-6;
+}
+
+.one-card-overlay {
+	@apply relative mx-auto mb-6 h-96 w-64 overflow-hidden rounded-xl bg-zinc-900 opacity-0 group-hover:opacity-40;
+}
+
+.card-img {
+	@apply absolute flex h-full w-full bg-cover bg-center transition-all duration-500 group-hover:scale-125;
+}
+
+.card-text {
+	@apply w-full self-end p-10 text-center font-bold text-white transition-all duration-500 group-hover:-translate-y-4;
+}
+
+.pagination-wrap > h2 {
+	@apply p-10 text-center text-xl font-bold sm:text-2xl lg:text-4xl;
+}

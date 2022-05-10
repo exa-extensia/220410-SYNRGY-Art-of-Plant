@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Page</title>
+		<link rel="stylesheet" href="./assets/css/output.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-cont">
+				<div class="left-block">
+					<a href="#hero">
+						<span class="logo"> LOGO </span>
+					</a>
+				</div>
+				<div class="right-block">
+					<!-- ============== NAV DROPDOWN -->
+					<button
+						id="hamburger"
+						name="hamburger"
+						type="button"
+						class="absolute right-4 block lg:hidden"
+					>
+						<span
+							class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+						></span>
+						<span
+							class="hamburger-line transition duration-300 ease-in-out"
+						></span>
+						<span
+							class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+						></span>
+					</button>
+					<!-- ============== NAV FULL -->
+					<nav id="nav-menu" class="hidden">
+						<ul>
+							<li class="group">
+								<a href="#about" class="reg-menu">ABOUT</a>
+							</li>
+							<li class="group">
+								<a href="#articles" class="reg-menu">ARTICLES</a>
+							</li>
+							<li class="group">
+								<a href="#products" class="reg-menu">PRODUCTS</a>
+							</li>
+							<li class="group">
+								<a href="#subscribe" class="subs-menu">SUBSCRIBE</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section
+			id="hero"
+			style="background-image: url(./assets/img/homepage/hero.jpg)"
+		>
+			<div class="hero-text-wrapper">
+				<h1 class="hero-text">POP PLANTS</h1>
+				<p class="hero-text">Pop Cult of Nature</p>
+			</div>
+		</section>
+
+		<section id="articles">
+			<div class="top-div">
+				<h2>Articles</h2>
+			</div>
+			<div class="bottom-div">
+				<div class="article-card">
+					<div
+						class="top-card"
+						style="background-image: url(./assets/img/homepage/a1.jpg)"
+					></div>
+					<div class="bottom-card">
+						<h3>Title of Articles</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+							tempore.
+						</p>
+					</div>
+				</div>
+				<div class="article-card">
+					<div
+						class="top-card"
+						style="background-image: url(./assets/img/homepage/a2.jpg)"
+					></div>
+					<div class="bottom-card">
+						<h3>Title of Articles</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+							tempore.
+						</p>
+					</div>
+				</div>
+				<div class="article-card">
+					<div
+						class="top-card"
+						style="background-image: url(./assets/img/homepage/a3.jpg)"
+					></div>
+					<div class="bottom-card">
+						<h3>Title of Articles</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+							tempore.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div
+				class="left-div"
+				style="background-image: url(./assets/img/homepage/about.jpg)"
+			></div>
+			<div class="right-div">
+				<h2>About</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quibusdam
+					quasi quod porro, nihil, exercitationem, commodi ducimus quae optio
+					quas sapiente. Illo nisi exercitationem officiis? Cupiditate fuga
+					iste, at in sequi a explicabo, libero rerum fugiat, sint tempore
+					necessitatibus nesciunt non dolorum qui! Facilis quibusdam nesciunt
+					veritatis ratione maiores consequatur aliquid soluta fugit aliquam,
+					inventore, modi dolores ea vero explicabo error beatae eligendi
+					excepturi tempore? Veniam iste qui, laudantium provident sit, magni ea
+					voluptatum, eos labore blanditiis dicta esse. Corrupti fugit
+					temporibus unde odio tenetur neque velit totam vel, dolores dicta
+					repudiandae doloremque vitae id nemo fuga. Voluptatibus, accusantium
+					temporibus?
+				</p>
+			</div>
+		</section>
+
+		<section id="subscribe">
+			<div class="sub-wrap">
+				<h2>SUBSCRIBE</h2>
+				<p>sign up to our newsletters</p>
+				<form>
+					<input
+						type="text"
+						placeholder="your email here..."
+						class="input-subscribe"
+					/>
+				</form>
+				<a href="#">
+					<span> SUBMIT </span>
+				</a>
+			</div>
+		</section>
+
+		<footer>
+			<div class="left-menu">
+				<p>© exa with 24/7 headache and confusion</p>
+			</div>
+			<div class="right-menu">
+				<a href="#about">
+					<span class="reg-btn"> ABOUT </span>
+				</a>
+				<a href="#articles">
+					<span class="reg-btn"> ARTICLES </span>
+				</a>
+				<a href="#hero">
+					<span class="reg-btn"> HOME </span>
+				</a>
+			</div>
+		</footer>
+
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

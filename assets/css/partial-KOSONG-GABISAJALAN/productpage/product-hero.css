@@ -1,0 +1,11 @@
+.hero-wrap-text {
+	@apply flex h-screen w-full flex-col items-center justify-center;
+
+	h1 {
+		@apply mb-10 w-full bg-gradient-to-br from-white bg-clip-text text-center text-5xl font-bold text-transparent sm:text-6xl lg:text-7xl;
+	}
+
+	p {
+		@apply text-md bg-gradient-to-br from-white bg-clip-text font-bold text-transparent sm:text-xl lg:text-2xl;
+	}
+}
